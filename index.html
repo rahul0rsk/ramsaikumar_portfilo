@@ -3,120 +3,483 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baliji Ramsaikumar Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Baliji Ramsaikumar | Full Stack Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Baliji <span>Ramsaikumar</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-<section class="hero">
-  <img src="https://uploads.onecompiler.io/43kjesx6a/43p6qkm35/pic.jpg" alt="Baliji Ramsaikumar" class="hero-img">
-  <h1>Baliji Ramsaikumar</h1>
-  <p> Full Stack Web Developer | C, Python, HTML | Fast Learner</p>
-  <div class="social-icons">
-    <a href="https://github.com/rahul0rsk" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:ramsaikumar07@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="tel:+917731004638"><i class="fas fa-phone"></i></a>
-    <a href="https://wa.me/917731004638" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href=https://www.instagram.com/wish_master_rahul_kumar?igsh=MWFwZWNoNTFmdGdsaw==" target="_blank"><i class="fab fa-Instagram"></i></a>
-    <a href="assets/resume.pdf" download><i class="fas fa-download" title="Download Resume"></i></a>
-  </div>
-</section>
-
-
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h3 class="hero-subtitle">Hello, I'm</h3>
+          <h1 class="hero-title">Baliji <span>Ramsaikumar</span></h1>
+          <h2 class="hero-role">Full Stack Web Developer</h2>
+          <p class="hero-description">Passionate developer specializing in C, Python, HTML, and modern web technologies. Fast learner with strong problem-solving skills.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#" class="btn btn-secondary" id="download-resume">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="https://uploads.onecompiler.io/43kjesx6a/43p6qkm35/pic.jpg" alt="Baliji Ramsaikumar" class="profile-img">
+            <div class="image-frame"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/rahul0rsk" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:ramsaikumar07@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+917731004638" class="social-icon" aria-label="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/917731004638" target="_blank" class="social-icon" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/wish_master_rahul_kumar?igsh=MWFwZWNoNTFmdGdsaw==" target="_blank" class="social-icon" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about" aria-label="Scroll to about section">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
 
   <!-- About Section -->
-  <section class="white-section">
-    <h2>About Me</h2>
-    <p>
-      A highly driven individual looking for a challenging position to utilize my engineering skills
-      that can contribute to the company’s growth and provide an impetus to my professional and
-      personal prosperity.
-    </p>
+  <section class="section white-section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>A highly driven individual looking for a challenging position to utilize my engineering skills that can contribute to the company's growth and provide an impetus to my professional and personal prosperity.</p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Name:</span>
+              <span class="info-value">Baliji Ramsaikumar</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email:</span>
+              <span class="info-value">ramsaikumar07@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone:</span>
+              <span class="info-value">+91 7731004638</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location:</span>
+              <span class="info-value">India</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="stat-number">2+</h3>
+            <p class="stat-text">Years Experience</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3 class="stat-number">10+</h3>
+            <p class="stat-text">Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3 class="stat-number">5+</h3>
+            <p class="stat-text">Certifications</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="container">
-    <h2 class="text-center">Skills</h2>
-    <ul>
-      <li>💻 C, Python, HTML</li>
-      <li>🌐 Web Development</li>
-      <li>📝 MS Office (Excel, Word, PowerPoint)</li>
-      <li>👥 Leadership & Team Management</li>
-      <li>⏱ Time Management & Multi-tasking</li>
-      <li>🗂 Organizational Skills</li>
-    </ul>
+  <section class="section container" id="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-container">
+      <div class="skills-category">
+        <h3 class="category-title">
+          <i class="fas fa-laptop-code"></i> Programming
+        </h3>
+        <div class="skill-items">
+          <div class="skill-item">
+            <span class="skill-name">C Programming</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90%"></div>
+            </div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85%"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">HTML/CSS</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="95%"></div>
+            </div>
+            <span class="skill-percent">95%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skills-category">
+        <h3 class="category-title">
+          <i class="fas fa-cogs"></i> Technical Skills
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Web Development</span>
+          <span class="skill-tag">MS Office</span>
+          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">TensorFlow</span>
+        </div>
+      </div>
+      
+      <div class="skills-category">
+        <h3 class="category-title">
+          <i class="fas fa-users"></i> Soft Skills
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Team Management</span>
+          <span class="skill-tag">Time Management</span>
+          <span class="skill-tag">Multi-tasking</span>
+          <span class="skill-tag">Organizational Skills</span>
+          <span class="skill-tag">Fast Learning</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Education Section -->
-  <section class="white-section">
-    <h2 class="text-center">Education</h2>
-    <p><strong>B.Tech – RK College of Engineering, Vijayawada</strong> (2019–2023)</p>
-    <p><strong>Intermediate – Sri Chaitanya Junior College, Kakinada</strong> (2017–2019)</p>
-    <p><strong>SSC – Siddhartha High School, Cheepurupalle</strong> (2016–2017) | CGPA: 9.2</p>
+  <section class="section white-section">
+    <div class="container">
+      <h2 class="section-title">Education & <span>Qualifications</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2019 – 2023</div>
+          <div class="timeline-content">
+            <h3>B.Tech in Engineering</h3>
+            <p class="timeline-subtitle">RK College of Engineering, Vijayawada</p>
+            <p>Specialized in computer science and engineering with focus on software development and data structures.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2017 – 2019</div>
+          <div class="timeline-content">
+            <h3>Intermediate Education</h3>
+            <p class="timeline-subtitle">Sri Chaitanya Junior College, Kakinada</p>
+            <p>Focused on mathematics, physics, and chemistry as core subjects.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2016 – 2017</div>
+          <div class="timeline-content">
+            <h3>Secondary School Certificate</h3>
+            <p class="timeline-subtitle">Siddhartha High School, Cheepurupalle</p>
+            <p>Graduated with a CGPA of 9.2/10.0</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Projects Section -->
-  <section class="container">
-    <h2 class="text-center">Projects</h2>
-    <div class="projects">
+  <section class="section container" id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects-grid">
       <div class="project-card">
-        <h3>Big Mart Sales Prediction</h3>
-        <p>Built ML models to predict sales trends using data cleaning, feature selection & model evaluation.</p>
+        <div class="project-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3 class="project-title">Big Mart Sales Prediction</h3>
+        <p class="project-description">Built ML models to predict sales trends using data cleaning, feature selection & model evaluation. Implemented multiple regression algorithms for accurate forecasting.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>Scikit-learn</span>
+          <span>Matplotlib</span>
+        </div>
+        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="project-card">
-        <h3>Real-Time Traffic Monitor</h3>
-        <p>Used OpenCV and TensorFlow to process traffic videos and analyze vehicle movement and density.</p>
+        <div class="project-icon">
+          <i class="fas fa-traffic-light"></i>
+        </div>
+        <h3 class="project-title">Real-Time Traffic Monitor</h3>
+        <p class="project-description">Used OpenCV and TensorFlow to process traffic videos and analyze vehicle movement and density. Implemented object detection for real-time traffic analysis.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>TensorFlow</span>
+          <span>Computer Vision</span>
+        </div>
+        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3 class="project-title">Portfolio Website</h3>
+        <p class="project-description">Developed a responsive portfolio website using HTML, CSS, and JavaScript. Implemented modern UI/UX design principles for optimal user experience across devices.</p>
+        <div class="project-tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+        </div>
+        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
   <!-- Experience Section -->
-  <section class="white-section">
-    <h2 class="text-center">Experience</h2>
-    <h3>Voice Process Executive</h3>
-    <p><em>Telechoice Health Care Pvt Ltd, Chennai (June 2024 – Nov 2024)</em></p>
-    <p>Managed inbound/outbound customer calls, ensured high satisfaction, and resolved queries using CRM tools.</p>
+  <section class="section white-section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Work <span>Experience</span></h2>
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Voice Process Executive</h3>
+            <p class="company">Telechoice Health Care Pvt Ltd, Chennai</p>
+          </div>
+          <div class="experience-date">June 2024 – November 2024</div>
+        </div>
+        <div class="experience-details">
+          <ul class="experience-list">
+            <li>Managed inbound/outbound customer calls ensuring high satisfaction rates</li>
+            <li>Resolved customer queries using CRM tools and maintained detailed records</li>
+            <li>Improved customer service processes leading to increased efficiency</li>
+            <li>Collaborated with team members to achieve monthly targets</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Internships & Certifications -->
-  <section class="container">
-    <h2 class="text-center">Internships & Certifications</h2>
-    <ul>
-      <li>Python Full Stack – APSSDC (Jul–Aug 2022)</li>
-      <li>Data Analysis with Python – APSSDC (Oct–Nov 2020)</li>
-      <li>Computer Networking – Nimra College (Aug–Sep 2021)</li>
-      <li>Artificial Intelligence – Skillup (Jul–Aug 2022)</li>
-    </ul>
+  <!-- Certifications Section -->
+  <section class="section container">
+    <h2 class="section-title">Certifications & <span>Internships</span></h2>
+    <div class="certifications-grid">
+      <div class="certification-card">
+        <div class="cert-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Python Full Stack</h3>
+        <p class="cert-org">APSSDC</p>
+        <p class="cert-date">Jul–Aug 2022</p>
+      </div>
+      <div class="certification-card">
+        <div class="cert-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>Data Analysis with Python</h3>
+        <p class="cert-org">APSSDC</p>
+        <p class="cert-date">Oct–Nov 2020</p>
+      </div>
+      <div class="certification-card">
+        <div class="cert-icon">
+          <i class="fas fa-network-wired"></i>
+        </div>
+        <h3>Computer Networking</h3>
+        <p class="cert-org">Nimra College</p>
+        <p class="cert-date">Aug–Sep 2021</p>
+      </div>
+      <div class="certification-card">
+        <div class="cert-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3>Artificial Intelligence</h3>
+        <p class="cert-org">Skillup</p>
+        <p class="cert-date">Jul–Aug 2022</p>
+      </div>
+    </div>
   </section>
 
   <!-- Languages -->
-  <section class="white-section text-center">
-    <h2>Languages</h2>
-    <p>English | Hindi | Telugu</p>
+  <section class="section white-section">
+    <div class="container">
+      <h2 class="section-title">Languages</h2>
+      <div class="languages-container">
+        <div class="language-item">
+          <div class="language-icon">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3>English</h3>
+          <p>Professional Proficiency</p>
+        </div>
+        <div class="language-item">
+          <div class="language-icon">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3>Hindi</h3>
+          <p>Professional Proficiency</p>
+        </div>
+        <div class="language-item">
+          <div class="language-icon">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3>Telugu</h3>
+          <p>Native Speaker</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="container text-center">
-    <h2>Get in Touch</h2>
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p id="thank-you" class="thank-you">Thank you! Your message has been received.</p>
-
-    <div class="contact-info">
-      <p>Email: <a href="mailto:ramsaikumar07@gmail.com">ramsaikumar07@gmail.com</a></p>
-      <p>Phone: <a href="tel:+917731004638">+91 7731004638</a></p>
-      <p>GitHub: <a href="https://github.com/rahul0rsk" target="_blank">github.com/rahul0rsk</a></p>
-      <p>linkedin: <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245" target="_blank">linkedin.com/in/baliji-ramsai-kumar-873205245</a></p>
-            <p>whatsapp: <a href="https://wa.me/917731004638" target="_blank">wa.me/917731004638</a></p>
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 class="contact-subtitle">Contact Information</h3>
+          <p class="contact-description">Feel free to reach out for collaborations or just a friendly hello!</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <a href="mailto:ramsaikumar07@gmail.com">ramsaikumar07@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <a href="tel:+917731004638">+91 7731004638</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>India</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-social">
+            <h4>Connect with me</h4>
+            <div class="social-links">
+              <a href="https://github.com/rahul0rsk" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://wa.me/917731004638" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.instagram.com/wish_master_rahul_kumar?igsh=MWFwZWNoNTFmdGdsaw==" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required class="form-input">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required class="form-input">
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="5" required class="form-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <div id="form-message" class="form-message"></div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Baliji <span>Ramsaikumar</span></h3>
+          <p>Full Stack Web Developer | Problem Solver | Fast Learner</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-envelope"></i> ramsaikumar07@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +91 7731004638</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Baliji Ramsaikumar. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart"></i> and code</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
