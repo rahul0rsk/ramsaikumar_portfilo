@@ -3,130 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baliji Ramsaikumar | Full Stack Developer</title>
+  <title>Baliji Ramsai Kumar | Full Stack Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">Baliji <span>Ramsaikumar</span></a>
-      <button class="menu-toggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <div class="logo">
+          <span class="logo-text">BRK</span>
+        </div>
+        <a href="#home" class="nav-logo">Baliji<span>Ramsai</span></a>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
-      <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+      
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="btn btn-primary nav-cta" id="downloadCvBtn">
+          <i class="fas fa-download"></i> Download CV
+        </button>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-container">
+    <div class="container hero-container">
       <div class="hero-content">
         <div class="hero-text">
-          <h3 class="hero-subtitle">Hello, I'm</h3>
-          <h1 class="hero-title">Baliji <span>Ramsaikumar</span></h1>
-          <h2 class="hero-role">Full Stack Web Developer</h2>
-          <p class="hero-description">Passionate developer specializing in C, Python, HTML, and modern web technologies. Fast learner with strong problem-solving skills.</p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            <a href="#" class="btn btn-secondary" id="download-resume">
-              <i class="fas fa-download"></i> Download CV
+          <div class="hero-badge">
+            <span>Hello, I'm</span>
+            <div class="badge-arrow"></div>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="title-line">Baliji</span>
+            <span class="title-line">Ramsai <span class="highlight">Kumar</span></span>
+          </h1>
+          
+          <div class="hero-subtitle">
+            <span class="typing-text"></span>
+            <span class="cursor"></span>
+          </div>
+          
+          <p class="hero-description">
+            A highly driven individual looking for a challenging position to utilize my engineering skills 
+            that can contribute to the company's growth and provide an impetus to my professional and 
+            personal prosperity.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fas fa-code"></i> View Projects
+            </a>
+            <a href="https://github.com/rahul0rsk" target="_blank" class="btn btn-outline">
+              <i class="fab fa-github"></i> GitHub
             </a>
           </div>
+          
+          <div class="hero-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Cheepurupalli, Vizianagaram - 535128</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+917731004638">+91 7731004638</a>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:ramsaikumar07@gmail.com">ramsaikumar07@gmail.com</a>
+            </div>
+          </div>
         </div>
+        
         <div class="hero-image">
-          <div class="image-container">
-            <img src="https://uploads.onecompiler.io/43kjesx6a/43p6qkm35/pic.jpg" alt="Baliji Ramsaikumar" class="profile-img">
-            <div class="image-frame"></div>
+          <div class="image-wrapper">
+            <div class="image-frame">
+              <img src="https://uploads.onecompiler.io/43kjesx6a/43p6qkm35/pic.jpg" 
+                   alt="Baliji Ramsai Kumar" 
+                   class="profile-image">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="floating-icons">
+              <div class="floating-icon" style="top: 20%; left: 10%;">
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="floating-icon" style="top: 30%; right: 15%;">
+                <i class="fab fa-java"></i>
+              </div>
+              <div class="floating-icon" style="bottom: 40%; left: 15%;">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="floating-icon" style="bottom: 20%; right: 10%;">
+                <i class="fas fa-database"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      
       <div class="hero-social">
-        <a href="https://github.com/rahul0rsk" target="_blank" class="social-icon" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245" target="_blank" class="social-icon" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:ramsaikumar07@gmail.com" class="social-icon" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="tel:+917731004638" class="social-icon" aria-label="Phone">
-          <i class="fas fa-phone"></i>
-        </a>
-        <a href="https://wa.me/917731004638" target="_blank" class="social-icon" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://www.instagram.com/wish_master_rahul_kumar?igsh=MWFwZWNoNTFmdGdsaw==" target="_blank" class="social-icon" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
+        <div class="social-divider">
+          <span>Follow me</span>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/rahul0rsk" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:ramsaikumar07@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+917731004638" class="social-icon">
+            <i class="fas fa-phone"></i>
+          </a>
+          <a href="https://wa.me/917731004638" target="_blank" class="social-icon">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/wish_master_rahul_kumar?igsh=MWFwZWNoNTFmdGdsaw==" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </div>
+    
     <div class="scroll-indicator">
-      <a href="#about" aria-label="Scroll to about section">
-        <i class="fas fa-chevron-down"></i>
-      </a>
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="section white-section" id="about">
+  <section class="section about-section" id="about">
     <div class="container">
-      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-number">01</span>
+          About Me
+        </h2>
+        <p class="section-subtitle">Get to know more about my background and career objectives</p>
+      </div>
+      
       <div class="about-content">
-        <div class="about-text">
-          <p>A highly driven individual looking for a challenging position to utilize my engineering skills that can contribute to the company's growth and provide an impetus to my professional and personal prosperity.</p>
-          <div class="about-info">
-            <div class="info-item">
-              <span class="info-label">Name:</span>
-              <span class="info-value">Baliji Ramsaikumar</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Email:</span>
-              <span class="info-value">ramsaikumar07@gmail.com</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Phone:</span>
-              <span class="info-value">+91 7731004638</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Location:</span>
-              <span class="info-value">India</span>
-            </div>
+        <div class="about-card">
+          <div class="card-icon">
+            <i class="fas fa-bullseye"></i>
           </div>
+          <h3>Career Objective</h3>
+          <p>
+            A highly driven individual looking for a challenging position to utilize my engineering skills 
+            that can contribute to the company's growth and provide an impetus to my professional and 
+            personal prosperity. I aim to leverage my technical expertise and behavioral skills to drive 
+            innovation and excellence in every project.
+          </p>
         </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3 class="stat-number">2+</h3>
-            <p class="stat-text">Years Experience</p>
+        
+        <div class="about-card">
+          <div class="card-icon">
+            <i class="fas fa-language"></i>
           </div>
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-project-diagram"></i>
+          <h3>Languages</h3>
+          <div class="languages-grid">
+            <div class="language-item">
+              <span class="language-name">English</span>
+              <div class="language-level">
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot"></span>
+                <span class="level-dot"></span>
+              </div>
+              <span class="level-text">Professional Working Proficiency</span>
             </div>
-            <h3 class="stat-number">10+</h3>
-            <p class="stat-text">Projects Completed</p>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-certificate"></i>
+            <div class="language-item">
+              <span class="language-name">Hindi</span>
+              <div class="language-level">
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot"></span>
+              </div>
+              <span class="level-text">Full Professional Proficiency</span>
             </div>
-            <h3 class="stat-number">5+</h3>
-            <p class="stat-text">Certifications</p>
+            <div class="language-item">
+              <span class="language-name">Telugu</span>
+              <div class="language-level">
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+                <span class="level-dot active"></span>
+              </div>
+              <span class="level-text">Native Speaker</span>
+            </div>
           </div>
         </div>
       </div>
@@ -134,95 +229,182 @@
   </section>
 
   <!-- Skills Section -->
-  <section class="section container" id="skills">
-    <h2 class="section-title">My <span>Skills</span></h2>
-    <div class="skills-container">
-      <div class="skills-category">
-        <h3 class="category-title">
-          <i class="fas fa-laptop-code"></i> Programming
-        </h3>
-        <div class="skill-items">
-          <div class="skill-item">
-            <span class="skill-name">C Programming</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="90%"></div>
-            </div>
-            <span class="skill-percent">90%</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Python</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="85%"></div>
-            </div>
-            <span class="skill-percent">85%</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">HTML/CSS</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="95%"></div>
-            </div>
-            <span class="skill-percent">95%</span>
-          </div>
-        </div>
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-number">02</span>
+          Skills & Expertise
+        </h2>
+        <p class="section-subtitle">Technical and behavioral competencies</p>
       </div>
       
-      <div class="skills-category">
-        <h3 class="category-title">
-          <i class="fas fa-cogs"></i> Technical Skills
-        </h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Web Development</span>
-          <span class="skill-tag">MS Office</span>
-          <span class="skill-tag">Data Analysis</span>
-          <span class="skill-tag">Machine Learning</span>
-          <span class="skill-tag">OpenCV</span>
-          <span class="skill-tag">TensorFlow</span>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="90">
+              <div class="skill-info">
+                <span class="skill-name">C Programming</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="85">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="80">
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="95">
+              <div class="skill-info">
+                <span class="skill-name">HTML/CSS</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress"></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      
-      <div class="skills-category">
-        <h3 class="category-title">
-          <i class="fas fa-users"></i> Soft Skills
-        </h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Leadership</span>
-          <span class="skill-tag">Team Management</span>
-          <span class="skill-tag">Time Management</span>
-          <span class="skill-tag">Multi-tasking</span>
-          <span class="skill-tag">Organizational Skills</span>
-          <span class="skill-tag">Fast Learning</span>
+        
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools & Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">Microsoft Office</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">CRM Software</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-users"></i>
+            <h3>Behavioral Skills</h3>
+          </div>
+          <div class="soft-skills">
+            <div class="soft-skill">
+              <i class="fas fa-chess-king"></i>
+              <div>
+                <h4>Leadership & Team Management</h4>
+                <p>Proven ability to lead teams and manage projects effectively</p>
+              </div>
+            </div>
+            <div class="soft-skill">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Time Management & Multi-tasking</h4>
+                <p>Efficiently handle multiple tasks with strict deadlines</p>
+              </div>
+            </div>
+            <div class="soft-skill">
+              <i class="fas fa-sitemap"></i>
+              <div>
+                <h4>Organizational Skills</h4>
+                <p>Strong planning and organizational capabilities</p>
+              </div>
+            </div>
+            <div class="soft-skill">
+              <i class="fas fa-lightbulb"></i>
+              <div>
+                <h4>Problem Solving</h4>
+                <p>Breaking down complex problems into manageable steps</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section class="section white-section">
+  <!-- Experience Section -->
+  <section class="section experience-section" id="experience">
     <div class="container">
-      <h2 class="section-title">Education & <span>Qualifications</span></h2>
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-number">03</span>
+          Work Experience
+        </h2>
+        <p class="section-subtitle">Professional journey and accomplishments</p>
+      </div>
+      
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-date">2019 – 2023</div>
+          <div class="timeline-date">June 2024 – November 2024</div>
           <div class="timeline-content">
-            <h3>B.Tech in Engineering</h3>
-            <p class="timeline-subtitle">RK College of Engineering, Vijayawada</p>
-            <p>Specialized in computer science and engineering with focus on software development and data structures.</p>
+            <div class="timeline-card">
+              <div class="card-header">
+                <h3>Voice Process Executive</h3>
+                <span class="company">Telechoice Health Care Pvt Ltd, Chennai</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Customer-oriented voice process executive with 6 months of experience</li>
+                <li>Handled inbound and outbound calls in a fast-paced environment</li>
+                <li>Proven ability to resolve customer inquiries efficiently</li>
+                <li>Ensured high levels of customer satisfaction</li>
+                <li>Proficient in using customer relationship management software</li>
+              </ul>
+            </div>
           </div>
         </div>
+        
         <div class="timeline-item">
-          <div class="timeline-date">2017 – 2019</div>
+          <div class="timeline-date">9 Months</div>
           <div class="timeline-content">
-            <h3>Intermediate Education</h3>
-            <p class="timeline-subtitle">Sri Chaitanya Junior College, Kakinada</p>
-            <p>Focused on mathematics, physics, and chemistry as core subjects.</p>
+            <div class="timeline-card">
+              <div class="card-header">
+                <h3>Freelancer</h3>
+                <span class="company">Self-Employed</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Successfully managed end-to-end digital marketing campaigns</li>
+                <li>Created impactful portfolios for diverse clients</li>
+                <li>Delivered responsive front-end solutions</li>
+                <li>Consistently met project goals and drove measurable growth</li>
+              </ul>
+            </div>
           </div>
         </div>
+        
         <div class="timeline-item">
-          <div class="timeline-date">2016 – 2017</div>
+          <div class="timeline-date">6 Months</div>
           <div class="timeline-content">
-            <h3>Secondary School Certificate</h3>
-            <p class="timeline-subtitle">Siddhartha High School, Cheepurupalle</p>
-            <p>Graduated with a CGPA of 9.2/10.0</p>
+            <div class="timeline-card">
+              <div class="card-header">
+                <h3>Quality Assurance</h3>
+                <span class="company">Metrochem Pvt Limited, Vishakapatnam</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Ensured product quality by performing detailed quality assurance inspections</li>
+                <li>Conducted process audits in chemical manufacturing environment</li>
+                <li>Helped maintain compliance with industry safety and regulatory standards</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -230,142 +412,171 @@
   </section>
 
   <!-- Projects Section -->
-  <section class="section container" id="projects">
-    <h2 class="section-title">My <span>Projects</span></h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-icon">
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <h3 class="project-title">Big Mart Sales Prediction</h3>
-        <p class="project-description">Built ML models to predict sales trends using data cleaning, feature selection & model evaluation. Implemented multiple regression algorithms for accurate forecasting.</p>
-        <div class="project-tech">
-          <span>Python</span>
-          <span>Pandas</span>
-          <span>Scikit-learn</span>
-          <span>Matplotlib</span>
-        </div>
-        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon">
-          <i class="fas fa-traffic-light"></i>
-        </div>
-        <h3 class="project-title">Real-Time Traffic Monitor</h3>
-        <p class="project-description">Used OpenCV and TensorFlow to process traffic videos and analyze vehicle movement and density. Implemented object detection for real-time traffic analysis.</p>
-        <div class="project-tech">
-          <span>Python</span>
-          <span>OpenCV</span>
-          <span>TensorFlow</span>
-          <span>Computer Vision</span>
-        </div>
-        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon">
-          <i class="fas fa-globe"></i>
-        </div>
-        <h3 class="project-title">Portfolio Website</h3>
-        <p class="project-description">Developed a responsive portfolio website using HTML, CSS, and JavaScript. Implemented modern UI/UX design principles for optimal user experience across devices.</p>
-        <div class="project-tech">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Responsive Design</span>
-        </div>
-        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section class="section white-section" id="experience">
+  <section class="section projects-section" id="projects">
     <div class="container">
-      <h2 class="section-title">Work <span>Experience</span></h2>
-      <div class="experience-card">
-        <div class="experience-header">
-          <div class="experience-title">
-            <h3>Voice Process Executive</h3>
-            <p class="company">Telechoice Health Care Pvt Ltd, Chennai</p>
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-number">04</span>
+          Projects
+        </h2>
+        <p class="section-subtitle">Hands-on implementation of technical skills</p>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="image-label">Machine Learning</div>
           </div>
-          <div class="experience-date">June 2024 – November 2024</div>
+          <div class="project-content">
+            <h3 class="project-title">Big Mart Sales Prediction</h3>
+            <p class="project-description">
+              Analyzed historical sales data, applied machine learning algorithms and created 
+              predictive models to forecast future sales trends. Involved data cleaning, feature 
+              selection, and model evaluation, providing valuable insight to improve inventory 
+              and sales strategies.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Jupyter</span>
+              <span>Machine Learning</span>
+              <span>Data Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="experience-details">
-          <ul class="experience-list">
-            <li>Managed inbound/outbound customer calls ensuring high satisfaction rates</li>
-            <li>Resolved customer queries using CRM tools and maintained detailed records</li>
-            <li>Improved customer service processes leading to increased efficiency</li>
-            <li>Collaborated with team members to achieve monthly targets</li>
-          </ul>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <div class="image-label">Computer Vision</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Real Time Traffic Monitor</h3>
+            <p class="project-description">
+              Using Python to track and analyze traffic patterns. Utilized OpenCV and TensorFlow 
+              to process video feeds, detect vehicle movements, and assess traffic density. 
+              Real-time monitoring system for traffic analysis and management.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>TensorFlow</span>
+              <span>Computer Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <div class="image-label">Web Development</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">
+              Modern, responsive portfolio website showcasing skills, projects, and experience. 
+              Built with HTML, CSS, and JavaScript, featuring smooth animations and interactive 
+              elements. Fully optimized for all devices and screen sizes.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Certifications Section -->
-  <section class="section container">
-    <h2 class="section-title">Certifications & <span>Internships</span></h2>
-    <div class="certifications-grid">
-      <div class="certification-card">
-        <div class="cert-icon">
-          <i class="fas fa-code"></i>
-        </div>
-        <h3>Python Full Stack</h3>
-        <p class="cert-org">APSSDC</p>
-        <p class="cert-date">Jul–Aug 2022</p>
-      </div>
-      <div class="certification-card">
-        <div class="cert-icon">
-          <i class="fas fa-chart-bar"></i>
-        </div>
-        <h3>Data Analysis with Python</h3>
-        <p class="cert-org">APSSDC</p>
-        <p class="cert-date">Oct–Nov 2020</p>
-      </div>
-      <div class="certification-card">
-        <div class="cert-icon">
-          <i class="fas fa-network-wired"></i>
-        </div>
-        <h3>Computer Networking</h3>
-        <p class="cert-org">Nimra College</p>
-        <p class="cert-date">Aug–Sep 2021</p>
-      </div>
-      <div class="certification-card">
-        <div class="cert-icon">
-          <i class="fas fa-robot"></i>
-        </div>
-        <h3>Artificial Intelligence</h3>
-        <p class="cert-org">Skillup</p>
-        <p class="cert-date">Jul–Aug 2022</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Languages -->
-  <section class="section white-section">
+  <!-- Education & Certifications -->
+  <section class="section education-section" id="education">
     <div class="container">
-      <h2 class="section-title">Languages</h2>
-      <div class="languages-container">
-        <div class="language-item">
-          <div class="language-icon">
-            <i class="fas fa-language"></i>
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-number">05</span>
+          Education & Certifications
+        </h2>
+        <p class="section-subtitle">Academic background and professional certifications</p>
+      </div>
+      
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="edu-icon">
+            <i class="fas fa-graduation-cap"></i>
           </div>
-          <h3>English</h3>
-          <p>Professional Proficiency</p>
+          <h3>Bachelor of Technology</h3>
+          <p class="institution">R K College of Engineering, Vijayawada</p>
+          <p class="duration">2019 – 2023</p>
+          <p class="description">Engineering degree focusing on computer science and software development</p>
         </div>
-        <div class="language-item">
-          <div class="language-icon">
-            <i class="fas fa-language"></i>
+        
+        <div class="education-card">
+          <div class="edu-icon">
+            <i class="fas fa-school"></i>
           </div>
-          <h3>Hindi</h3>
-          <p>Professional Proficiency</p>
+          <h3>Intermediate</h3>
+          <p class="institution">Sri Chaitanya Junior College, Kakinada</p>
+          <p class="duration">2017 – 2019</p>
+          <p class="description">Science stream with focus on Mathematics and Physics</p>
         </div>
-        <div class="language-item">
-          <div class="language-icon">
-            <i class="fas fa-language"></i>
+        
+        <div class="education-card">
+          <div class="edu-icon">
+            <i class="fas fa-award"></i>
           </div>
-          <h3>Telugu</h3>
-          <p>Native Speaker</p>
+          <h3>Secondary School Certificate</h3>
+          <p class="institution">Siddhartha High School, Cheepurupalle</p>
+          <p class="duration">2016 – 2017</p>
+          <p class="cgpa">CGPA: 9.2</p>
+        </div>
+      </div>
+      
+      <div class="certifications-section">
+        <h3 class="certifications-title">Professional Certifications</h3>
+        <div class="certifications-grid">
+          <div class="certification-card">
+            <h4>Full Stack Web Development</h4>
+            <p class="cert-org">Tap Academy</p>
+            <p class="cert-date">July 2023 - February 2024</p>
+          </div>
+          <div class="certification-card">
+            <h4>Full Stack Java Programming</h4>
+            <p class="cert-org">Skillup</p>
+            <p class="cert-date">July 2022 - December 2023</p>
+          </div>
+          <div class="certification-card">
+            <h4>Python Full Stack</h4>
+            <p class="cert-org">APSSDC, Vijayawada</p>
+            <p class="cert-date">July 2022 - August 2022</p>
+          </div>
+          <div class="certification-card">
+            <h4>Data Analysis using Python</h4>
+            <p class="cert-org">APSSDC, Vijayawada</p>
+            <p class="cert-date">October 2020 – November 2020</p>
+          </div>
         </div>
       </div>
     </div>
@@ -374,77 +585,95 @@
   <!-- Contact Section -->
   <section class="section contact-section" id="contact">
     <div class="container">
-      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-number">06</span>
+          Get In Touch
+        </h2>
+        <p class="section-subtitle">Let's discuss opportunities and collaborations</p>
+      </div>
+      
       <div class="contact-container">
         <div class="contact-info">
-          <h3 class="contact-subtitle">Contact Information</h3>
-          <p class="contact-description">Feel free to reach out for collaborations or just a friendly hello!</p>
-          
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-text">
-                <h4>Email</h4>
-                <a href="mailto:ramsaikumar07@gmail.com">ramsaikumar07@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="contact-text">
-                <h4>Phone</h4>
-                <a href="tel:+917731004638">+91 7731004638</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
+          <div class="contact-card">
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+              <div class="contact-item">
                 <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Kottha Kummara Colony, Cheepurupalli<br>Vizianagaram - 535128</p>
+                </div>
               </div>
-              <div class="contact-text">
-                <h4>Location</h4>
-                <p>India</p>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+917731004638">+91 7731004638</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:ramsaikumar07@gmail.com">ramsaikumar07@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/rahul0rsk" target="_blank">github.com/rahul0rsk</a>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <div class="contact-social">
-            <h4>Connect with me</h4>
-            <div class="social-links">
-              <a href="https://github.com/rahul0rsk" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://wa.me/917731004638" target="_blank" aria-label="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-              <a href="https://www.instagram.com/wish_master_rahul_kumar?igsh=MWFwZWNoNTFmdGdsaw==" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
+            
+            <div class="contact-social">
+              <h4>Connect with me</h4>
+              <div class="social-icons">
+                <a href="https://github.com/rahul0rsk" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:ramsaikumar07@gmail.com">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/917731004638" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/wish_master_rahul_kumar?igsh=MWFwZWNoNTFmdGdsaw==" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
         
-        <div class="contact-form-container">
-          <form id="contact-form" class="contact-form">
+        <div class="contact-form">
+          <form id="contactForm">
             <div class="form-group">
-              <input type="text" name="name" placeholder="Your Name" required class="form-input">
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+              <label for="name">Name</label>
             </div>
             <div class="form-group">
-              <input type="email" name="email" placeholder="Your Email" required class="form-input">
+              <input type="email" id="email" name="email" required placeholder="Your Email">
+              <label for="email">Email</label>
             </div>
             <div class="form-group">
-              <textarea name="message" placeholder="Your Message" rows="5" required class="form-textarea"></textarea>
+              <input type="text" id="subject" name="subject" required placeholder="Subject">
+              <label for="subject">Subject</label>
             </div>
-            <button type="submit" class="btn btn-primary form-submit">
+            <div class="form-group">
+              <textarea id="message" name="message" required placeholder="Your Message" rows="5"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
           </form>
-          <div id="form-message" class="form-message"></div>
+          <div id="formMessage" class="form-message"></div>
         </div>
       </div>
     </div>
@@ -454,29 +683,42 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo">
-          <h3>Baliji <span>Ramsaikumar</span></h3>
-          <p>Full Stack Web Developer | Problem Solver | Fast Learner</p>
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-text">BRK</span>
+          </div>
+          <div>
+            <h3>Baliji Ramsai Kumar</h3>
+            <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+          </div>
         </div>
+        
         <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Contact Info</h4>
-          <p><i class="fas fa-envelope"></i> ramsaikumar07@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +91 7731004638</p>
+          <div class="link-group">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#" id="resumeLink">Download Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="https://github.com/rahul0rsk" target="_blank">GitHub</a></li>
+              <li><a href="#education">Education</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+      
       <div class="footer-bottom">
-        <p>&copy; 2024 Baliji Ramsaikumar. All rights reserved.</p>
-        <p>Designed with <i class="fas fa-heart"></i> and code</p>
+        <p>&copy; <span id="currentYear"></span> Baliji Ramsai Kumar. All rights reserved.</p>
+        <p>Designed and developed with ❤️ by Baliji</p>
       </div>
     </div>
   </footer>
