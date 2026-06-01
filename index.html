@@ -222,6 +222,7 @@
     .tf-1 { top: 10%; left: -10%; animation-delay: 0s; }
     .tf-2 { bottom: 20%; right: -5%; animation-delay: 2s; }
     .tf-3 { top: 50%; right: -20%; animation-delay: 4s; }
+    .tf-4 { bottom: 50%; left: -5%; animation-delay: 1s; } /* Added for Digital Marketing */
 
     @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
 
@@ -557,8 +558,9 @@
       <div class="hero-img-container">
         <div class="tech-float tf-1"><i class="fab fa-python"></i> Python</div>
         <div class="tech-float tf-2"><i class="fab fa-react"></i> Web Dev</div>
-        <div class="tech-float tf-3"><i class="fas fa-brain"></i> Front-End Web developer </div>
-        <div class="tech-float tf-1"><i class="fab fa-python"></i> Digital Marketing </div>
+        <div class="tech-float tf-3"><i class="fas fa-brain"></i> Machine Learning</div>
+        <!-- Added Digital Marketing badge with unique position -->
+        <div class="tech-float tf-4"><i class="fas fa-chart-line"></i> Digital Marketing</div>
         
         <div class="hero-img-frame">
           <img src="https://uploads.onecompiler.io/43kjesx6a/43p6qkm35/pic.jpg" alt="Baliji Ramsai Kumar">
@@ -812,7 +814,7 @@
           </div>
         </div>
 
-        <!-- Project 5: SOLAR SYSTEM EXPLORATION (ADDED) -->
+        <!-- Project 5: SOLAR SYSTEM EXPLORATION -->
         <div class="project-card">
           <div class="project-img">
              <i class="fas fa-globe-americas" style="font-size: 3rem; color: var(--text-muted); position: absolute;"></i>
@@ -844,7 +846,7 @@
             <i class="fas fa-user-shield" style="font-size: 3rem; color: var(--text-muted); position: absolute;"></i>
           </div>
           <div class="project-body">
-            <h3 class="project-title">SVA CRM Application prototype </h3>
+            <h3 class="project-title">SVA CRM Application prototype</h3>
             <p class="project-desc">Comprehensive CRM for tracking interactions, managing contacts, and analyzing business data.</p>
             <div class="project-tags">
               <span class="tag">Full Stack</span><span class="tag">Dashboard</span>
@@ -950,8 +952,8 @@
     <div class="container">
       <div class="social-links">
         <a href="https://github.com/rahul0rsk" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/baliji-ramsai-kumar-873205245/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/wish_master_rahul_kumar/" class="social-icon"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/917731004638" class="social-icon"><i class="fab fa-whatsapp"></i></a>
       </div>
       <p>&copy; <span id="year"></span> Baliji Ramsai Kumar. All rights reserved.</p>
@@ -1009,11 +1011,9 @@
     });
 
     // Resume/CV Buttons
-    document.querySelectorAll('#cvBtn, .resume-link').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        showToast('CV Download feature would trigger here.', 'success');
-      });
+    document.getElementById('cvBtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      showToast('CV Download feature would trigger here.', 'success');
     });
 
     // Typing Effect
