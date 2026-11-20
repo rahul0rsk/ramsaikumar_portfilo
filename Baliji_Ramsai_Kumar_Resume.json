@@ -1,0 +1,197 @@
+{
+  "personal_information": {
+    "full_name": "Baliji Ramsai Kumar",
+    "location": "Cheepurupalli, Vizianagaram, Andhra Pradesh 535128, India",
+    "phone": "+91 7731004638",
+    "email": "ramsaikumar07@gmail.com",
+    "github": "https://github.com/rahul0rsk",
+    "portfolio": "https://ramsaikumarportfilo.netlify.app/"
+  },
+  "professional_summary": "IT Hardware Technician with a foundation in computer hardware, hardware upgrades, networking and cybersecurity. Also brings experience in web development, customer support and quality assurance, with practical exposure to Python, Wireshark and Nmap. Seeking opportunities in IT support, desktop support, hardware support or network support.",
+  "technical_skills": {
+    "it_hardware": [
+      "Computer hardware fundamentals",
+      "Hardware upgrade support",
+      "Troubleshooting fundamentals"
+    ],
+    "networking": [
+      "Networking fundamentals",
+      "Network scanning",
+      "Packet analysis",
+      "Wireshark",
+      "Nmap"
+    ],
+    "cybersecurity": [
+      "Cybersecurity fundamentals",
+      "Vulnerability assessment fundamentals"
+    ],
+    "programming": [
+      "C",
+      "Python",
+      "HTML",
+      "Java"
+    ],
+    "tools_and_applications": [
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Microsoft PowerPoint",
+      "Web development"
+    ],
+    "professional_skills": [
+      "Communication",
+      "Teamwork",
+      "Time management",
+      "Multitasking",
+      "Organization"
+    ]
+  },
+  "professional_experience": [
+    {
+      "job_title": "IT Hardware Technician",
+      "company": "Ravirays",
+      "employment_status": "Current",
+      "start_date": null,
+      "responsibilities": [
+        "Currently working as an IT Hardware Technician."
+      ]
+    },
+    {
+      "job_title": "Voice Process Executive",
+      "company": "Telechoice Health Care Pvt. Limited",
+      "location": "Chennai",
+      "start_date": "June 2024",
+      "end_date": "November 2024",
+      "responsibilities": [
+        "Handled inbound and outbound customer support calls.",
+        "Maintained client records and case logs using CRM software."
+      ]
+    },
+    {
+      "job_title": "Freelance Web Developer & Digital Marketer",
+      "company": "Freelance",
+      "duration": "9 months",
+      "responsibilities": [
+        "Designed and deployed responsive web interfaces and portfolio websites for clients.",
+        "Managed digital marketing activities to improve engagement and visibility."
+      ]
+    },
+    {
+      "job_title": "Quality Assurance Associate",
+      "company": "Metrochem Pvt. Limited",
+      "location": "Visakhapatnam",
+      "duration": "6 months",
+      "responsibilities": [
+        "Conducted product inspections and audits in line with regulatory and chemical safety standards."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Computer Hardware & Hardware and Upgrade Support",
+      "issuer": "Cisco Networking Academy"
+    },
+    {
+      "name": "Networking",
+      "issuer": "Cisco Networking Academy"
+    },
+    {
+      "name": "Cybersecurity",
+      "issuer": "Cisco Networking Academy"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Network Traffic & Vulnerability Analysis (Wireshark & Nmap)",
+      "details": [
+        "Configured an isolated VirtualBox test environment for network reconnaissance and service enumeration using Nmap.",
+        "Captured and analyzed packet data in Wireshark using display filters to review network traffic and protocol weaknesses.",
+        "Prepared assessment documentation covering risk analysis and remediation guidelines for legacy services."
+      ]
+    },
+    {
+      "name": "Real-Time Traffic Monitor",
+      "details": [
+        "Used Python, OpenCV and TensorFlow to process live video feeds, detect vehicle movement and measure traffic density."
+      ]
+    },
+    {
+      "name": "Big Mart Sales Prediction (Jupyter Notebook)",
+      "details": [
+        "Analyzed historical sales data and applied machine learning techniques for forecasting, including data cleaning, feature selection and model evaluation."
+      ]
+    }
+  ],
+  "internships": [
+    {
+      "job_title": "Python Full Stack Intern",
+      "organization": "APSSDC",
+      "location": "Vijayawada",
+      "start_date": "July 2022",
+      "end_date": "August 2022",
+      "responsibilities": [
+        "Built front-end and back-end components for web applications.",
+        "Translated functional requirements into maintainable development tasks."
+      ]
+    },
+    {
+      "job_title": "Data Analysis Intern",
+      "organization": "APSSDC",
+      "location": "Vijayawada",
+      "start_date": "October 2020",
+      "end_date": "November 2020",
+      "responsibilities": [
+        "Analyzed datasets and coordinated with technical teams to resolve data discrepancies."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "qualification": "Bachelor of Technology",
+      "status": "Coursework; degree not completed",
+      "institution": "R K College of Engineering",
+      "location": "Vijayawada",
+      "start_year": 2019,
+      "end_year": 2023
+    },
+    {
+      "qualification": "Intermediate",
+      "institution": "Sri Chaitanya Junior College",
+      "location": "Kakinada",
+      "start_year": 2017,
+      "end_year": 2019
+    },
+    {
+      "qualification": "Secondary School Certificate (SSC)",
+      "institution": "Siddhartha High School",
+      "location": "Cheepurupalli",
+      "start_year": 2016,
+      "end_year": 2017,
+      "cgpa": 9.2
+    }
+  ],
+  "additional_courses": [
+    {
+      "name": "Cyber Security Course",
+      "provider": "Aneel Academy",
+      "start_date": "July 2026",
+      "end_date": "August 2026"
+    },
+    {
+      "name": "Full Stack Web Development",
+      "provider": "Tap Academy",
+      "start_date": "July 2023",
+      "end_date": "February 2024"
+    },
+    {
+      "name": "Full Stack Java Programming",
+      "provider": "SkillUp",
+      "start_date": "July 2022",
+      "end_date": "December 2023"
+    }
+  ],
+  "languages": [
+    "English",
+    "Telugu",
+    "Hindi"
+  ]
+}
